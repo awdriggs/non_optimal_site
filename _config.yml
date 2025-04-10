@@ -2,7 +2,7 @@ title: Non Optimal Imaging
 description: My NYU Low Res Thesis Project documentation. An exploration of what photography is today through the building and use of “Non-Optimal” cameras that do not function as expected. 
 baseurl: "" # Leave empty for GitHub Pages
 url: "https://adriggs.github.io"
-theme: minima
+theme: jekyll-theme-minima
 
 plugins:
   - jekyll-feed
