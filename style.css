@@ -1,0 +1,80 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+body {
+  background: url('background.gif') center center / cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 500px;
+  font-size: 1.2rem;
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  border-color: white;
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    margin-top: 0;
+  }
+}
